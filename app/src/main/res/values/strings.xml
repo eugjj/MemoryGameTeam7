@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">MemoryGameTeam7</string>
+    <string name="enter_player_name">Enter your name...</string>
+    <string name="start">Start</string>
+    <string name="introTxt">Team 7 Android Project</string>
+    <string name="nameTxt">Enter your name</string>
+    <string name="rules">
+        <b>Memory Game Rules</b>\n
+        1. Enter your name, press Start\n
+        2. Enter a valid url, press Fetch\n
+        3. Wait for 20 images to be downloaded\n
+        4. Pick any 6 images to be used in the game\n
+        5. Select any 2 images to see if they match\n
+        6. Continue selecting until all images are matched\n
+        7. View your timing in the results page\n\n
+        <b>Good Luck!</b></string>
+    <string name="downloading">Downloading %1$d out of 20 Images...</string>
+    <string name="download_complete">Download completed for 20 out of 20 images!</string>
+    <string name="errorUrlNotification">Error! Please enter a correct URL.</string>
+    <string name="no_enough_image">Not enough valid images.</string>
+</resources>

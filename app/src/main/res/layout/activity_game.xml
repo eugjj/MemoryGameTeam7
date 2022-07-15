@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/topView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintBottom_toTopOf="@+id/gridView">
+
+        <TextView
+            android:id="@+id/matchView"
+            android:text="0 out of 6 matches"
+            android:textSize="18sp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <Chronometer
+            android:id="@+id/timerView"
+            android:text="placeholder for timer id is timerView"
+            android:textSize="18sp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.9"
+        app:layout_constraintTop_toBottomOf="@+id/topView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:horizontalSpacing="6dp"
+        android:numColumns="3"
+        android:verticalSpacing="6dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
